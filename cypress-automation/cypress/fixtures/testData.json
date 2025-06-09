@@ -1,0 +1,26 @@
+{
+  "user": {
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "janedoe_test001@example.com",
+    "password": "StrongPass123"
+  },
+  "products": [
+    {
+      "url": "/radiant-tee.html",
+      "sizeSelector": "#option-label-size-143-item-166",
+      "colorSelector": "#option-label-color-93-item-50"
+    },
+    {
+      "url": "/breathe-easy-tank.html",
+      "sizeSelector": "#option-label-size-143-item-167",
+      "colorSelector": "#option-label-color-93-item-53"
+    },
+    {
+      "url": "/argus-all-weather-tank.html",
+      "sizeSelector": "#option-label-size-143-item-169",
+      "colorSelector": "#option-label-color-93-item-57"
+    }
+  ],
+  "searchTerm": "hoodie"
+}
