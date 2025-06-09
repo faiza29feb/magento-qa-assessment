@@ -1,0 +1,24 @@
+{
+  "name": "magento-qa-assessment",
+  "version": "1.0.0",
+  "description": "QA Automation Assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faiza29feb/magento-qa-assessment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faiza29feb/magento-qa-assessment/issues"
+  },
+  "homepage": "https://github.com/faiza29feb/magento-qa-assessment#readme",
+  "devDependencies": {
+    "cypress": "^14.4.1",
+    "mochawesome": "^7.1.3"
+  }
+}
