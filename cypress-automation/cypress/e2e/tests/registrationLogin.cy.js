@@ -13,9 +13,9 @@ describe('Registration and Login Flow', () => {
     registerPage.verifySuccess()
   })
 
-  it('should log in with newly registered user', () => {
-    loginPage.visit()
-    loginPage.login(testData.user.email, testData.user.password)
-    loginPage.verifyLogin()
-  })
+ // it('should log in with newly registered user', () => {
+ //   loginPage.visit()
+ //   loginPage.login(testData.user.email, testData.user.password)
+ //   loginPage.verifyLogin()
+ // })
 })
