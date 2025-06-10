@@ -7,11 +7,11 @@ class LoginPage {
   login(email, password) {
     cy.get('#email').type(email)
     cy.get('#pass').type(password)
-    cy.get('button[title="Sign In"]').should('be.visible').click()
+    cy.get('#send2').should('be.visible').click()
   }
 
   verifyLogin() {
-    cy.contains('Welcome').should('exist')
+    cy.contains('My Account').should('exist')
   }
 }
 
