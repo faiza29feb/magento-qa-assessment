@@ -1,6 +1,6 @@
 class SearchPage {
   visitHomePage() {
-    ccy.visit('https://magento.softwaretestingboard.com')
+    cy.visit('https://magento.softwaretestingboard.com')
     // Wait for the search box to appear
     cy.get('#search', { timeout: 10000 }).should('be.visible')
   }
