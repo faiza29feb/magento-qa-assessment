@@ -1,7 +1,7 @@
 class WishlistPage {
   visitProductAndAddToWishlist(product) {
     cy.visit(product.url)
-    cy.get('a[title="Add to Wish List"]').click()
+    cy.get('a[title="Add to Wish List"]').first().click()
   }
 
   goToWishlist() {
@@ -9,7 +9,7 @@ class WishlistPage {
   }
 
   moveToCartFromWishlist() {
-    cy.get('button[title="Add to Cart"]').click()
+    cy.get('button[title="Add to Cart"]').first().click()
   }
 }
 

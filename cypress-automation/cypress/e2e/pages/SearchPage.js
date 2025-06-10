@@ -9,9 +9,15 @@ class SearchPage {
     cy.get('#search', { timeout: 10000 }).should('be.visible').type(`${searchTerm}{enter}`)
   }
 
-  verifyResults(term) {
-    cy.get('.product-item', { timeout: 10000 }).should('contain.text', term)
-  }
+  verifyResults(searchTerm) {
+  cy.get('.product-item .product-item-link')
+    .should('exist')
+    .each(($el) => {
+      cy.wrap($el).invoke('text').then((text) => {
+        expect(text.toLowerCase()).to.include(searchTerm.toLowerCase()) //to make the matching process easy
+      });
+    });
+}
 }
 
 export default SearchPage
